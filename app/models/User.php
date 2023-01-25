@@ -13,7 +13,7 @@ class User {
                                  ucase(UserType) As UserType,
                                  Active
                           FROM   users u inner join usertypes t ON u.UserTypeId = t.ID
-                          WHERE  UserTypeId > 1');
+                          WHERE  Visible = 1');
         return $this->db->resultSet();
     }
     public function CheckUserExists($data)
