@@ -1,0 +1,156 @@
+:root {
+  --primary: #254565;
+  --secondary: #653d25;
+  --white: #fff;
+}
+.lg-bx {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.lg-bx .imgBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.lg-bx .imgBx::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(225deg, #5a7188, #254565);
+  z-index: 1;
+  mix-blend-mode: screen;
+}
+.lg-bx .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.lg-bx .contentBx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.lg-bx .contentBx .formBx {
+  width: 50%;
+}
+.lg-bx .contentBx .formBx h2 {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  border-bottom: 4px solid var(--secondary);
+  display: inline-block;
+  letter-spacing: 1px;
+}
+.lg-bx .contentBx .formBx .inputBx {
+  margin-bottom: 20px;
+}
+.lg-bx .contentBx .formBx .inputBx label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline-block;
+  color: var(--primary);
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.lg-bx .contentBx .formBx .inputBx input[type="submit"] {
+  background: var(--primary);
+  color: var(--white);
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  border-radius: 30px;
+}
+.lg-bx .contentBx .formBx .inputBx input[type="submit"]:hover {
+  background: #5a7188;
+}
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+[type="text"].form-control:focus,
+[type="password"].form-control:focus,
+[type="email"].form-control:focus,
+[type="tel"].form-control:focus,
+[contenteditable].form-control:focus {
+  box-shadow: inset 0 -1px 0 #ddd;
+}
+@media (max-width: 768px) {
+  .lg-bx .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .lg-bx .contentBx {
+    width: 100%;
+    z-index: 1;
+  }
+  .lg-bx .formBx {
+    width: 100%;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    margin: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .lg-bx .contentBx .formBx {
+    width: 100%;
+    margin: 20px;
+  }
+}
+.mandatory {
+  border-left: 2px solid rgb(241, 136, 136);
+}
+.bg-custom {
+  background-color: var(--primary);
+}
+.bg-custom-secondary {
+  background-color: var(--secondary);
+}
+.custom-success {
+  background: #d4edda;
+}
+.custom-danger {
+  background: #f8d7da;
+}
+.w-half {
+  width: 50%;
+}
+.gradient {
+  color: #fff;
+}
+.gradient-1 {
+  background: linear-gradient(to right, #814ffc, #7889fd);
+}
+.gradient-2 {
+  background: linear-gradient(to left, #fd5d8b, #fb9b9d);
+}
+.gradient-3 {
+  background: linear-gradient(to right, #fe7c40, #feb370);
+}
+.gradient-4 {
+  background: linear-gradient(to left, #295fff, #5e86ff);
+}
+.small-box #custom-title {
+  font-size: 1.4rem;
+}
+.small-box .icon .ion {
+  font-size: 30px !important;
+}
