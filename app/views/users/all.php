@@ -1,6 +1,6 @@
 <?php require APPROOT . '/views/inc/header.php';?>
-<?php require APPROOT . '/views/inc/topNav.php';?>
-<?php require APPROOT . '/views/inc/sideNav.php';?>
+<?php require APPROOT . '/views/inc/topnav.php';?>
+<?php require APPROOT . '/views/inc/sidenav.php';?>
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->

@@ -1,6 +1,6 @@
 <?php require APPROOT . '/views/inc/header.php';?>
-<?php require APPROOT . '/views/inc/topNav.php';?>
-<?php require APPROOT . '/views/inc/sideNav.php';?>
+<?php require APPROOT . '/views/inc/topnav.php';?>
+<?php require APPROOT . '/views/inc/sidenav.php';?>
 <!-- Modal -->
 <div class="modal fade" id="deleteModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
