@@ -7,7 +7,7 @@ class Category{
     }
     public function GetCategories()
     {
-        $this->db->query('SELECT * FROM Categories WHERE Deleted = 0');
+        $this->db->query('SELECT * FROM categories WHERE Deleted = 0');
         return $this->db->resultSet();
     }
     public function CheckExists($data)
